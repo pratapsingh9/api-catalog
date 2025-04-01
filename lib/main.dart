@@ -10,7 +10,7 @@ Future<void> main() async {
     print('Sources directory (${sourcesDir.path}) not found.');
     return;
   }
-
+//a
   await for (var entity in sourcesDir.list(recursive: true, followLinks: false)) {
     if (entity is File && isValidSourceFile(entity)) {
       try {
