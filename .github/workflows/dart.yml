@@ -16,5 +16,8 @@ jobs:
       - name: Setup Dart
         uses: dart-lang/setup-dart@v1
 
+      - name: Get Dependencies
+        run: dart pub get
+
       - name: Run conversion script
         run: dart run lib/main.dart
